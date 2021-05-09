@@ -5,11 +5,18 @@ using System.Text;
 
 namespace GroceryStoreBL.Infrastructure.Models
 {
+    /// <summary>
+    /// Customer Model Collection Root
+    /// </summary>
     public class CustomerCollection
     {
         [JsonProperty("customers")]
         public ICollection<Customer> Customers { get; set; }
     }
+
+    /// <summary>
+    /// Customer Model
+    /// </summary>
     public class Customer
     {
         [JsonProperty("id")]
